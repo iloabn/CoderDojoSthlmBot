@@ -33,7 +33,7 @@ namespace CoderDojoBot.Dialogs
         {
             string message = "The coming Dojos are";
 
-            DojoService.GetDojos().ForEach(d =>
+            DojoService.GetDojos().Where(d => d.IsFuture).ToList().ForEach(d =>
             {
                 message += $"\n\n" +
                 $"{d.Company} ({d.Adress}) on {d.Start.ToString("MMMM d")} between {d.Start.ToString("HH:mm")} - {d.End.ToString("HH:mm")}";
