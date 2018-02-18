@@ -10,8 +10,8 @@ namespace CoderDojoBot.Models
         public string Company { get; set; }
         public string Adress { get; set; }
         public DateTime Start { get; set; }
-        private DateTime _end;
 
+        private DateTime _end;
         public DateTime End
         {
             get
@@ -21,12 +21,6 @@ namespace CoderDojoBot.Models
             set { _end = value; }
         }
 
-
         public bool IsFuture => Start.Ticks > DateTime.Now.Ticks;
-
-        const string NextCompany = "Bisnode";
-        const string NextAdresss = "Rosenborgsgatan 4, Solna";
-        const string NextDate = "6nd Maj";
-        const string NextTime = "10:00 - 12:00";
     }
 }

@@ -4,16 +4,23 @@ using Microsoft.Bot.Builder.Luis;
 using Microsoft.Bot.Builder.Luis.Models;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 
 namespace CoderDojoBot.Dialogs
 {
-    [LuisModel("f48c3579-7859-40ad-9260-ef9ec67df3ba", "28d98303e0fe480491397858764a186f")]
     [Serializable]
     public class DojoDialog : LuisDialog<object>
     {
+        public DojoDialog() : base(new LuisService( new LuisModelAttribute(
+            ConfigurationManager.AppSettings["LuisAppId"],
+            ConfigurationManager.AppSettings["LuisAPIKey"])))
+        {
+
+        }
+
         [LuisIntent("NextDojoSummary")]
         public async Task GetNextDojo(IDialogContext context, LuisResult result)
         {
@@ -24,7 +31,7 @@ namespace CoderDojoBot.Dialogs
             }
             catch (Exception)
             {
-                await context.PostAsync($"I... I don't know :( \n\n Maybe it isn't planned yet?");
+                await context.PostAsync($"I... I don't know when the next dojo is 😢 \n\n Maybe it isn't planned yet?");
             }
         }
 
