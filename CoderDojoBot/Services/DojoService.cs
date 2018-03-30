@@ -20,7 +20,7 @@ namespace CoderDojoBot.Services
                 new Dojo{ Adress = "Drottninggatan 71D", Company = "iStone", Start = new DateTime(2018,04,14,10,0,0)},
             };
 
-            var wednesdayStart = new DateTime(2018, 02, 03, 17, 30, 0);
+            var wednesdayStart = new DateTime(2018, 03, 11, 17, 30, 0);
 
             while (wednesdayStart < new DateTime(2018, 06, 08))
             {
