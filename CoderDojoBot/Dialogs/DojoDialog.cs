@@ -38,7 +38,7 @@ namespace CoderDojoBot.Dialogs
         [LuisIntent("AllUpcomingDojos")]
         public async Task GetAllComingDojos(IDialogContext context, LuisResult result)
         {
-            string message = "The coming Dojos are";
+            string message = "The upcoming Dojos are";
 
             DojoService.GetDojos().Where(d => d.IsFuture).ToList().ForEach(d =>
             {
