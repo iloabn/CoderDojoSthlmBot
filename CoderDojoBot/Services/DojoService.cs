@@ -27,11 +27,11 @@ namespace CoderDojoBot.Services
 
             var wednesdayStart = new DateTime(2018, 04, 11, 17, 30, 0);
 
-            while (wednesdayStart < new DateTime(2018, 06, 08))
+            do
             {
                 wednesdayStart = wednesdayStart.AddDays(7);
                 dojos.Add(new Dojo { Adress = "Hammarby Kaj 10D", Company = "FooCafe", Start = wednesdayStart, End = wednesdayStart.AddHours(1.5) });
-            }
+            } while (wednesdayStart < new DateTime(2018, 06, 08));
 
             return dojos.OrderBy(dojo => dojo.Start).ToList();
         }
