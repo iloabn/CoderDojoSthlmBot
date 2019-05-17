@@ -33,7 +33,7 @@ namespace CoderDojoBot
             return response;
         }
 
-        private Activity HandleSystemMessage    (Activity message)
+        private Activity HandleSystemMessage(Activity message)
         {
             if (message.Type == ActivityTypes.DeleteUserData)
             {
@@ -57,6 +57,8 @@ namespace CoderDojoBot
             }
             else if (message.Type == ActivityTypes.Ping)
             {
+                // Handle ping?
+                // (we don't need to do anything)
             }
 
             return null;
