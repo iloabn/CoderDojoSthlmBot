@@ -15,10 +15,10 @@ namespace CoderDojoBot.Services
                 new Dojo{ Adress = "Smålandsgatan 15", Company = "Nordea", Start = new DateTime(2019,03,23,10,0,0)},
                 new Dojo{ Adress = "Drottninggatan 71D", Company = "Columbus", Start = new DateTime(2019,03,30,10,0,0)},
                 new Dojo{ Adress = "Drottninggatan 95A", Company = "Dynabyte", Start = new DateTime(2019,03,09,10,0,0)},
-                new Dojo{ Adress = "Barks Väg 15", Company = "IF", Start = new DateTime(2019,04,27,10,0,0)},
+                new Dojo{ Adress = "Barks Väg 15", Company = "IF", Start = new DateTime(2019,10,05,10,0,0)},
                 new Dojo{ Adress = "Hantverkargatan 5", Company = "Valtech", Start = new DateTime(2019,05,04,10,0,0)},
                 new Dojo{ Adress = "Drottninggatan 95A", Company = "Dynabyte", Start = new DateTime(2019,05,11,10,0,0)},
-                new Dojo{ Adress = "Hantverkargatan 5", Company = "Valtech", Start = new DateTime(2019,05,18,10,0,0)},
+                new Dojo{ Adress = "Hantverkargatan 5", Company = "Valtech", Start = new DateTime(2019,09,28,10,0,0)},
             };
 
             dojos.Add(new Dojo { Adress = "Hammarby Kaj 10D", Company = "FooCafe", Start = new DateTime(2018, 09, 12, 17, 30, 0), End = new DateTime(2018, 09, 12, 17, 30, 0).AddHours(1.5) });
