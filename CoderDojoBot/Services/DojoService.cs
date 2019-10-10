@@ -11,14 +11,13 @@ namespace CoderDojoBot.Services
         {
             var dojos = new List<Dojo>()
             {
-                new Dojo{ Adress = "", Company = "Columbus OR Nordea", Start = new DateTime(2019,03,16,10,0,0)},
-                new Dojo{ Adress = "Smålandsgatan 15", Company = "Nordea", Start = new DateTime(2019,03,23,10,0,0)},
-                new Dojo{ Adress = "Drottninggatan 71D", Company = "Columbus", Start = new DateTime(2019,03,30,10,0,0)},
-                new Dojo{ Adress = "Drottninggatan 95A", Company = "Dynabyte", Start = new DateTime(2019,03,09,10,0,0)},
-                new Dojo{ Adress = "Barks Väg 15", Company = "IF", Start = new DateTime(2019,10,05,10,0,0)},
-                new Dojo{ Adress = "Hantverkargatan 5", Company = "Valtech", Start = new DateTime(2019,05,04,10,0,0)},
-                new Dojo{ Adress = "Drottninggatan 95A", Company = "Dynabyte", Start = new DateTime(2019,05,11,10,0,0)},
-                new Dojo{ Adress = "Hantverkargatan 5", Company = "Valtech", Start = new DateTime(2019,09,28,10,0,0)},
+                new Dojo{ Adress = "Barks Väg 15", Company = "IF", Start = new DateTime(2019,11,09,10,0,0)},
+                new Dojo{ Adress = "Barks Väg 15", Company = "IF", Start = new DateTime(2019,12,07,10,0,0)},
+                new Dojo{ Adress = "Hantverkargatan 5", Company = "Valtech", Start = new DateTime(2019,10,12,10,0,0)},
+                new Dojo{ Adress = "Sveavägen 13", Company = "Wise IT", Start = new DateTime(2019,10,19,10,0,0)},
+                new Dojo{ Adress = "Årstaängsvägen 21B", Company = "Cisco", Start = new DateTime(2019,11,16,10,0,0)},
+                new Dojo{ Adress = "Årstaängsvägen 21B", Company = "Cisco", Start = new DateTime(2019,11,23,10,0,0)},
+                new Dojo{ Adress = "Regeringsgatan 29", Company = "Netlight", Start = new DateTime(2019,11,23,10,0,0)},
             };
 
             dojos.Add(new Dojo { Adress = "Hammarby Kaj 10D", Company = "FooCafe", Start = new DateTime(2018, 09, 12, 17, 30, 0), End = new DateTime(2018, 09, 12, 17, 30, 0).AddHours(1.5) });
